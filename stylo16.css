@@ -1,0 +1,270 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+
+}
+
+.menu{
+	margin-top: 7px;
+	padding-top: 4px;
+	padding-bottom: 3px;
+	padding-left: 3px;
+	padding-right: 3px;
+	background-color: #121111;
+	text-align: center;
+	position: relative;
+}
+.menu ul{
+	background-color: #121111;
+	margin: 0px;
+	padding: 0px;
+	height: 100px;
+}
+.menu ul li{
+	float: center;
+	width: 110px;
+}
+
+ul li a{
+	border-left: 0px solid #FFFFFF;
+	border-right: 0px solid #7C7C7C;
+	padding: .5em;
+	display: block;
+	text-decoration: none;
+}
+
+nav{
+	display: flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items:center;
+}
+.nav-links{
+	flex: 1;
+	text-align: right;
+}
+
+.nav-links ul li{
+	list-style: inside;
+	display: inline-block;
+	padding: 20px 12px;
+	position: relative;
+}
+
+.nav-links ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 13px;
+}
+
+.nav-links ul li::after{
+	content: '';
+	width: 0%;
+	height: 2px;
+	background: #f44336;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+	width: 100%;
+}
+
+nav img{
+	width: 80px;
+	left: 80px;
+}
+body footer {
+	position: relative;
+	top:29em;
+	background-color: #131313;
+	text-align: center;
+	color: #F3EAEA;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	height: 150px;
+}
+body footer p{
+	padding-top: 7.5em;
+}
+
+
+*{
+	font-family: "Poppins", sans-serif;
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+
+body{
+	min-height: 150vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	background: rgba(20,69,187,1.00);
+}
+
+.container{
+	position: relative;
+	max-width: 900px;
+	width: 150%;
+	background: #8777;
+	padding: 30px;
+	border-radius: 8px;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.container header{
+	font-size: 1.9rem;
+	color: #333;
+	font-weight: 700;
+	text-align: center;
+}
+
+.container .form{
+	margin-top: 30px;
+}
+
+.form .input-box{
+	width: 100%;
+	margin-top: 20px;
+}
+
+.input-box label{
+	color: #333;
+}
+
+.container-form textarea{
+	max-width: 530px;
+	min-width: 530px;
+	min-height: 140px;
+	max-height: 150px;
+		border-radius: 6px;
+}
+
+.form :where(.input-box input, .select-box){
+	position: relative;
+	height: 50px;
+	width: 100%;
+	outline: none;
+	font-size: 1rem;
+	color: #707070;
+	margin-top: 8px;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	padding: 0 15px;
+}
+
+.form .column{
+	display: flex;
+	column-gap: 15px;
+}
+
+.form .gender-box{
+	margin-top: 20px;
+}
+
+ img{
+	width: 80px;
+	left: 80px;
+}
+
+.gender-box h3{
+	color: #333;
+	font-size: 1rem;
+	font-weight: 400;
+	margin-bottom: 8px;
+}
+
+
+
+.form :where(.gender-option, .gender){
+	display: flex;
+	align-items: center;
+	column-gap: 50px;
+	flex-wrap: wrap;
+}
+.form .gender{
+	column-gap: 5px;
+	cursor: pointer;
+}
+
+#matricula{
+	background-color:#686868;
+	width: 600px;
+	height: 200px;
+	margin-top: 0;
+	text-align: center;
+	font-size: 17px;
+	padding-top: 8em;
+	padding-right: 1em;
+	padding-left: 1em;
+	position: absolute;
+	left: 5%;
+	color: #000000;
+}
+
+.input-box input:focus{
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.gender input{
+	accent-color: rgba(20,69,187,1.00);
+}
+
+.form :where(.gender input, .gender label){
+	cursor: pointer;
+}
+
+.gender label{
+	color: #707070;
+}
+.addres :where(input, .select-box){
+	margin-top: 20px;
+}
+.select-box select{
+	height: 100%;
+	width: 100%;
+	outline: none;
+	border: none;
+	color: #707070;
+	font-size: 1rem;
+}
+.form button{
+	height: 55px;
+	width: 100%;
+	color: #fff;
+	font-size: 1rem;
+	border: none;
+	margin-top: 30px;
+	cursor: pointer;
+	border-radius: 6px;
+	font-weight: 400;
+	transition: all 0.2s ease;
+	background-color: rgba(20,69,187,1.00);
+}
+
+.form button:hover{
+	background-color: rgba(0,0,181,1.00);
+}
+/*Responsive*/
+
+@media screen and (max-width: 500px){
+	.form .column{
+		flex-wrap: wrap;
+	}
+
+	.form :where(.gender-option, .gender){
+		row-gap: 15px;
+	}
+}

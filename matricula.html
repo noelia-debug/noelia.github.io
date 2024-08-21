@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario Pre-Matricula</title>
+	<link rel="stylesheet" href="90.css">
+</head>
+<body>
+	<h1>Formulario Pre-Matricula</h1>
+	<form action="procesar.php" method="post">
+		<table>
+			<tr>
+				<td>Indentidad:</td>
+				<td><input type="text" name="identidad" required></td>
+			</tr>
+			<tr>
+				<td>Nombre:</td>
+				<td><input type="text" name="nombre" required></td>
+			</tr>
+			<tr>
+				<td>Apellido:</td>
+				<td><input type="text" name="apellido" required></td>
+			</tr>
+			<tr>
+				<td>Edad:</td>
+				<td><input type="number" name="edad" required></td>
+			</tr>
+			<tr>
+				<td>Fecha de Nacimiento:</td>
+				<td><input type="date" name="fecha_nacimiento" required></td>
+			</tr>
+			<tr>
+				<td>Sexo:</td>
+				<td>
+					<select name="sexo" required>
+						<option value="">Seleccione</option>
+						<option value="Masculino">Masculino</option>
+						<option value="Femenino">Femenino</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Telefono:</td>
+				<td><input type="tel" name="telefono" required></td>
+			</tr>
+			<tr>
+
+
+				<td colspan="2">
+					   <h1 class="hi">Bachillerato Tenico Professional</h1>
+					<label for="jornada">Jornada:</label>
+  <select id="jornada" name="jornada">
+		<option value=""></option>
+    <option value="Mañana">Manana</option>
+    <option value="Tarde">Tarde</option>
+    <option value="Noche">Noche</option>
+  </select>
+
+  <label for="seccion">Seccion:</label>
+  <select id="seccion" name="seccion">
+		  <option value=""></option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+  </select>
+
+  <label for="bachiller">Bachiller:</label>
+  <select id="bachiller" name="bachiller">
+		<option value=""></option>
+    <option value="BTP INFORMATICA">BTP INFORMATICA</option>
+    <option value="BTP CIENCIAS Y HUMANIDADES">BTP CIENCIAS Y HUMANIDADES</option>
+    <option value="BTP CONTROL Y CALIDAD">BTP CONTROL Y CALIDAD</option>
+		<option value="BTP CONTADURIA Y FINANZAS">BTP CONTADURIA Y FINANZAS</option>
+		<option value="BTP ADMINISTRACION DE EMPRESAS">BTP ADMINISTRACION DE EMPRESAS</option>
+
+  </select>
+	<h1 class="hi">Ciclo Comun</h1>
+<label for="jornada_ciclo">Jornada:</label>
+<select id="jornada_ciclo" name="jornada_ciclo">
+<option value=""></option>
+<option value="Mañana">Manana</option>
+<option value="Tarde">Tarde</option>
+<option value="Noche">Noche</option>
+</select>
+
+<label for="seccion_ciclo">Seccion:</label>
+<select id="seccion_ciclo" name="seccion_ciclo">
+<option value=""></option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+</select>
+
+<label for="cilo_comun">Ciclo Comun:</label>
+<select id="cilo_comun" name="cilo_comun">
+<option value=""></option>
+<option value="SEPTIMO">SEPTIMO</option>
+<option value="OCTAVO">OCTAVO</option>
+<option value="NOVENO">NOVENO</option>
+
+
+</select><br><br>
+<h1 class="hi">Datos del Padre</h1>
+<label for="nombre_padre">Nombre del padre:</label>
+		<input type="text" id="nombre_padre" name="nombre_padre"><br><br>
+		<label for="apellido_padre">Apellido del padre:</label>
+		<input type="text" id="apellido_padre" name="apellido_padre"><br><br>
+		<label for="edad_padre">Edad del padre:</label>
+		<input type="number" id="edad_padre" name="edad_padre"><br><br>
+		<label for="identidad_padre">Identidad del Padre:</label>
+		<input type="number" id="identidad_padre" name="identidad_padre"><br><br>
+		<label for="telefono_padre">Numero del Padre:</label>
+		<input type="number" id="telefono_padre" name="telefono_padre"><br><br>
+
+
+<h1 class="hi">Datos de la Madre</h1>
+		<label for="nombre_madre">Nombre de la madre:</label>
+		<input type="text" id="nombre_madre" name="nombre_madre"><br><br>
+		<label for="apellido_madre">Apellido de la madre:</label>
+		<input type="text" id="apellido_madre" name="apellido_madre"><br><br>
+		<label for="edad_madre">Edad de la madre:</label>
+		<input type="number" id="edad_madre" name="edad_madre"><br><br>
+		<label for="identidad_madre">Identidad de la Madre:</label>
+		<input type="number" id="identidad_madre" name="identidad_madre"><br><br>
+		<label for="telefono_madre">Numero de la Madre:</label>
+		<input type="number" id="telefono_madre" name="telefono_madre"><br><br>
+
+
+		<label for="mensaje_html">Por favor dejanos saber algo mas que te gustaria</label>
+	    <textarea id="mensaje_html" name="mensaje_html" cols="150" rows="10"></textarea>
+	    <br><br>
+					<input type="submit" value="Enviar">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
